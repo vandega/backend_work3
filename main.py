@@ -6,4 +6,4 @@ car2 = car("BMW", 'X7i', 2023, "black/blue", 437)
 print(car1.full_info())
 print(car1.get_hp())
 
-car1.new_color('blue')
+print(car1.get("color"))

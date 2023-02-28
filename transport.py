@@ -9,6 +9,7 @@ class car:
 
     # method of get by choosing by value ('uses string :(' )
     def get(self, value):
+        value = value.lower()
         if value == "brand": return self.__brand
         elif value == "model": return self.__model
         elif value == "production_year": return self.__production_year

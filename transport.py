@@ -4,7 +4,7 @@ class car:
         self.__model = model
         self.__production_year = int(production_year)
         self.__color = color
-        self.__horse_power = f'{int(horse_power)} HP'
+        self.__horse_power = int(horse_power)
         self.__is_sport_car = is_sport_car
 
     # method of get by choosing by value ('uses string :(' )
@@ -41,6 +41,18 @@ class car:
         elif not self.__is_sport_car:
             return "not sportcar"
 
+    def change_color(self, new_color):
+        if self.__color != str(new_color):
+            self.__color = new_color
+            return True
+        return False
 
-
-
+    def increase_horse_power(self, horse_power):
+        if horse_power > 0:
+            self.__horse_power += horse_power
+            return  True
+        elif self.__horse_power + horse_power > 0:
+            self.__horse_power += horse_power
+            return True
+        else:
+            return False

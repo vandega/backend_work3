@@ -9,3 +9,5 @@ print(car1.get('horse_power'))
 print(car1.change_color('white'))
 print(car1.increase_horse_power(20))
 print(car1.full_info())
+
+print('done')
